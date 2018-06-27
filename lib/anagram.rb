@@ -12,11 +12,8 @@ class Anagram
     #anagram_list_words = anagram_list.split(", ")
     anagram_array = []
     #anagram_list.each{|letters| letters.split("").sort}
-    if anagram_list.find_all {|new_word| new_word.split("").sort == word_letters}
+    anagram_list.find_all {|new_word| new_word.split("").sort == word_letters}
 
-    else
-      anagram_array
-    end
 
   end
 end
