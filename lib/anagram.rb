@@ -14,6 +14,5 @@ class Anagram
     #anagram_list.each{|letters| letters.split("").sort}
     anagram_list.find_all {|new_word| new_word.split("").sort == word_letters}
 
-
   end
 end
